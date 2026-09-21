@@ -1,0 +1,58 @@
+{
+    "layer": "top",
+    "modules-left": ["hyprland/workspaces", "hyprland/submap"],
+    "modules-center": ["clock"],
+    "modules-right": ["battery", "bluetooth","network", "cpu", "memory"],
+    "hyprland/window": {
+        "max-length": 50
+    },
+    "battery": {
+        "interval": 60,
+        "format": "{capacity} {icon}",
+        "format-icons": {
+            "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+            "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+        }
+    },
+    "bluetooth": {
+        // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+        "format": " ",
+        "format-disabled": "", // an empty format will hide the module
+        "format-connected": " {num_connections}",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "{}%",
+        "max-length": 10, 
+    }, 
+    "memory": {
+        "interval": 30,
+        "format": " {percentage}%",
+        "tooltip-format": "{used:0.1f}G/{total:0.1f}G used"
+    },
+    "network": {
+        "format": "",
+        "format-wifi": " ",
+        "format-ethernet": "",
+        "format-disconnected": "󰤭", //An empty format will hide the module.
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "󰖪",
+        "max-length": 50,
+        "on-click": "exec nmrs",
+    },
+    "clock": {
+        "letter-spacing": 0.5,
+        "format": " {:%a,%d/%m %H:%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "format": {
+            "today": "<span color='#75f1fa'><b>{}</b></span>"
+            }
+        }
+    }
+}
