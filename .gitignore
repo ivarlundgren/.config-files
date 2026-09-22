@@ -2,6 +2,7 @@
 /*
 
 # Allow only these
+!/nvim/
 !/.gitignore
 !/hypr/
 !/kitty/
