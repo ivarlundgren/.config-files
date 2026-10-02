@@ -6,5 +6,22 @@
     "window.zoomLevel": -0.7,
     "terminal.integrated.fontSize": 11.5,
     "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
-    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font Mono', monospace"
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font Mono', monospace",
+    "git.confirmSync": false,
+    "terminal.integrated.fastScrollSensitivity": 3,
+    "terminal.integrated.mouseWheelScrollSensitivity": 0.1,
+    "terminal.integrated.smoothScrolling": true,
+    "xlsxViewer.showPopups": true,
+    "xlsxViewer.xlsx.firstRowIsHeader": true,
+    "xlsxViewer.xlsx.stickyToolbar": true,
+    "xlsxViewer.xlsx.stickyHeader": false,
+    "xlsxViewer.xlsx.autoSave": true,
+    "xlsxViewer.xlsx.autoSaveMode": "all",
+    "xlsxViewer.xlsx.showManualSavePopup": true,
+    "xlsxViewer.xlsx.allowInteractiveControlsOutsideEditMode": true,
+    "xlsxViewer.xlsx.hyperlinkPreview": true,
+    "xlsxViewer.xlsx.spaciousCells": false,
+    "xlsxViewer.xlsx.mergeWarningEnabled": true,
+    "xlsxViewer.xlsx.textWrap": false,
+    "files.autoSave": "afterDelay"
 }
